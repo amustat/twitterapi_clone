@@ -4,7 +4,12 @@ class TweetsController < ApplicationController
 
   # GET /tweets
   def index
-    @tweets = Tweet.all.order(created_at: :desc)
+    @user = @tweet.user
+    @user_tweet =Tweet.where(user_id: @user.id).order(created_at: :desc)
+    @followers.each do |follower|
+      @follow_tweet = @follow_tweet + Tweet.where(user_id: @follower.id).order(created_at: :desc)
+    end
+    @tweets = @user_tweet + @follow_tweet
     render json: @tweets
   end
 

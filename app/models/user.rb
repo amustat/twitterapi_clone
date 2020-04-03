@@ -13,6 +13,9 @@ class User < ApplicationRecord
     def tweets
       return Tweet.where(user_id: self.id)
     end
+
+    def followers
+        return User.where(follower_user_id: self.id)
     
 
 end
