@@ -1,25 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+twitter api clone
 
-Things you may want to cover:
+referring to progate Rails cource
 
-* Ruby version
+main function 
+/tweet
+/follow
+/login
+/like
+/DM
 
-* System dependencies
 
-* Configuration
+things to do 
+/ devise authorization
+/ test code
+/ allow tweet with image 
+/ user icon setting
+/ secure login
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
 
 * ...
 # twitterapi_clone
